@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackerverse Competitor Roadmap</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: #fff;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 40px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 3px solid #00ff88;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #00ff88;
+            margin-bottom: 10px;
+            text-shadow: 0 0 20px rgba(0, 255, 136, 0.5);
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: #a0a0a0;
+        }
+
+        .phase {
+            margin-bottom: 50px;
+            background: rgba(255, 255, 255, 0.03);
+            border-left: 5px solid #00ff88;
+            border-radius: 10px;
+            padding: 30px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .phase:hover {
+            transform: translateX(10px);
+            box-shadow: -5px 5px 30px rgba(0, 255, 136, 0.2);
+        }
+
+        .phase-header {
+            margin-bottom: 25px;
+        }
+
+        .phase-title {
+            font-size: 2em;
+            color: #00ff88;
+            margin-bottom: 10px;
+        }
+
+        .phase-duration {
+            color: #ff6b6b;
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        .objective {
+            background: rgba(0, 255, 136, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 3px solid #00ff88;
+            margin-bottom: 20px;
+        }
+
+        .objective strong {
+            color: #00ff88;
+        }
+
+        .month {
+            margin-bottom: 30px;
+            background: rgba(255, 255, 255, 0.02);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .month-title {
+            font-size: 1.5em;
+            color: #4ecdc4;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .month-title::before {
+            content: "📅";
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+
+        .section {
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        .section-title {
+            font-size: 1.2em;
+            color: #ffd93d;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .topics, .tools, .resources, .activity, .strategy, .community {
+            margin-bottom: 15px;
+        }
+
+        .label {
+            color: #ff6b6b;
+            font-weight: bold;
+            display: inline-block;
+            margin-right: 5px;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        li::before {
+            content: "▹";
+            color: #00ff88;
+            position: absolute;
+            left: 0;
+            font-size: 1.2em;
+        }
+
+        .resource-link {
+            color: #4ecdc4;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .resource-link:hover {
+            color: #00ff88;
+            text-decoration: underline;
+        }
+
+        .highlight {
+            background: rgba(255, 107, 107, 0.2);
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: #ff6b6b;
+            font-weight: bold;
+        }
+
+        .success-note {
+            background: rgba(255, 215, 0, 0.1);
+            border: 2px solid #ffd700;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 40px;
+            text-align: center;
+            font-size: 1.1em;
+        }
+
+        .success-note strong {
+            color: #ffd700;
+            font-size: 1.2em;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .phase-title {
+                font-size: 1.5em;
+            }
+
+            .month-title {
+                font-size: 1.2em;
+            }
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .phase {
+            animation: fadeIn 0.6s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 The Hackerverse Competitor Roadmap</h1>
+            <p class="subtitle">Starting October 2025</p>
+        </header>
+
+        <!-- Phase 1 -->
+        <div class="phase">
+            <div class="phase-header">
+                <h2 class="phase-title">Phase 1: Building the Foundation</h2>
+                <p class="phase-duration">3 Months: October 2025 – December 2025</p>
+                <div class="objective">
+                    <strong>Objective:</strong> Master the absolute fundamentals of IT that every cybersecurity professional needs. This phase is non-negotiable and crucial for success.
+                </div>
+            </div>
+
+            <!-- Month 1 -->
+            <div class="month">
+                <h3 class="month-title">Month 1: Mastering the Command Line & Operating Systems</h3>
+                
+                <div class="section">
+                    <div class="section-title">🐧 Linux/Unix Fundamentals:</div>
+                    <div class="topics">
+                        <span class="label">Topics:</span>
+                        <p>Learn to navigate the filesystem (ls, cd, pwd), manage files/directories (cp, mv, rm, mkdir), manage permissions (chmod), filter text (grep, awk, sed), and manage processes (ps, kill). Learn about SSH and basic Bash scripting.</p>
+                    </div>
+                    <div class="resources">
+                        <span class="label">Resources:</span>
+                        <ul>
+                            <li><strong>Practice:</strong> OverTheWire - Bandit (This is an excellent, game-like way to master the Linux command line)</li>
+                            <li><strong>Learning:</strong> TryHackMe's Linux Fundamentals module</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">🪟 Windows Fundamentals:</div>
+                    <div class="topics">
+                        <span class="label">Topics:</span>
+                        <p>Get comfortable with Command Prompt and PowerShell. Understand the basics of the Windows Registry, user account control, and the NTFS file system.</p>
+                    </div>
+                    <div class="resources">
+                        <span class="label">Resources:</span>
+                        <ul>
+                            <li>Microsoft's official documentation and tutorials on PowerShell</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Month 2 -->
+            <div class="month">
+                <h3 class="month-title">Month 2: Understanding Networks</h3>
+                
+                <div class="section">
+                    <div class="topics">
+                        <span class="label">Topics:</span>
+                        <p>Learn the OSI and TCP/IP models. Understand what IP addresses, subnets, DNS, and MAC addresses are. Study common protocols like HTTP/HTTPS, FTP, SSH, and ICMP.</p>
+                    </div>
+                    <div class="resources">
+                        <span class="label">Resources:</span>
+                        <ul>
+                            <li><strong>Theory:</strong> Professor Messer's CompTIA Network+ Training Course (free videos)</li>
+                            <li><strong>Practice:</strong> Use Wireshark to capture and analyze your own network traffic. Try the "Intro to Networking" room on TryHackMe</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Month 3 -->
+            <div class="month">
+                <h3 class="month-title">Month 3: Learning to Code for Hackers</h3>
+                
+                <div class="section">
+                    <div class="section-title">🐍 Primary Language: Python</div>
+                    <div class="topics">
+                        <span class="label">Topics:</span>
+                        <p>Focus on fundamentals: variables, data types, loops, conditional statements, functions, and file handling. Learn to use key libraries like <span class="highlight">requests</span> (for web interaction) and <span class="highlight">pwntools</span> (for binary exploitation).</p>
+                    </div>
+                    <div class="resources">
+                        <span class="label">Resources:</span>
+                        <ul>
+                            <li><strong>Learning:</strong> freeCodeCamp's Python for Everybody course</li>
+                            <li><strong>Practice:</strong> Codewars (solve small programming challenges)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">⚙️ Secondary Language: C/C++ Basics</div>
+                    <div class="topics">
+                        <span class="label">Topics:</span>
+                        <p>You don't need to be an expert. Just understand basic syntax, pointers, and memory management, as this is crucial for reverse engineering and binary exploitation later.</p>
+                    </div>
+                    <div class="resources">
+                        <span class="label">Resource:</span>
+                        <ul>
+                            <li>Any introductory C++ tutorial on YouTube will suffice</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Phase 2 -->
+        <div class="phase">
+            <div class="phase-header">
+                <h2 class="phase-title">Phase 2: Introduction to Cybersecurity & Tools</h2>
+                <p class="phase-duration">3 Months: January 2026 – March 2026</p>
+                <div class="objective">
+                    <strong>Objective:</strong> Transition from general IT to core cybersecurity concepts and begin using the essential tools of the trade.
+                </div>
+            </div>
+
+            <!-- Month 4 -->
+            <div class="month">
+                <h3 class="month-title">Month 4: Web Exploitation Fundamentals</h3>
+                
+                <div class="section">
+                    <div class="topics">
+                        <span class="label">Topics:</span>
+                        <p>Learn how websites work (client-side vs. server-side). Dive deep into the OWASP Top 10 vulnerabilities, focusing initially on SQL Injection, Cross-Site Scripting (XSS), and Command Injection.</p>
+                    </div>
+                    <div class="tools">
+                        <span class="label">Tools:</span>
+                        <p>Master the basics of <span class="highlight">Burp Suite Community Edition</span>. Learn how to intercept, inspect, and modify web traffic.</p>
+                    </div>
+                    <div class="resources">
+                        <span class="label">Resources:</span>
+                        <ul>
+                            <li><strong>Hands-on Academy:</strong> PortSwigger's Web Security Academy (The best free resource for learning web hacking)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Month 5 -->
+            <div class="month">
+                <h3 class="month-title">Month 5: Cryptography & Steganography</h3>
+                
+                <div class="section">
+                    <div class="topics">
+                        <span class="label">Topics:</span>
+                        <ul>
+                            <li><strong>Cryptography:</strong> Study classical ciphers (Caesar, Vigenère), modern hashing algorithms (MD5, SHA), and common encoding schemes (Base64, URL encoding). Understand the difference between symmetric and asymmetric encryption.</li>
+                            <li><strong>Steganography:</strong> Learn how data can be hidden within images, audio files, and other media.</li>
+                        </ul>
+                    </div>
+                    <div class="tools">
+                        <span class="label">Tools:</span>
+                        <p>Get very familiar with <span class="highlight">CyberChef</span> and command-line tools like <span class="highlight">openssl</span>.</p>
+                    </div>
+                    <div class="resources">
+                        <span class="label">Resources:</span>
+                        <ul>
+                            <li><strong>Practice:</strong> CryptoHack (an outstanding platform for learning cryptography through challenges)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Month 6 -->
+            <div class="month">
+                <h3 class="month-title">Month 6: Introduction to Reverse Engineering & Forensics</h3>
+                
+                <div class="section">
+                    <div class="section-title">🔍 Reverse Engineering:</div>
+                    <div class="topics">
+                        <span class="label">Topics:</span>
+                        <p>Learn the basics of x86 Assembly. Understand what a disassembler and a debugger do.</p>
+                    </div>
+                    <div class="tools">
+                        <span class="label">Tool:</span>
+                        <p>Download <span class="highlight">Ghidra</span> (free from the NSA) and learn its basic functions: how to load a binary and view the disassembly and decompiled C code.</p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">🕵️ Digital Forensics:</div>
+                    <div class="topics">
+                        <span class="label">Topics:</span>
+                        <p>Learn about file signatures (magic numbers), metadata, and how to analyze disk images and memory dumps.</p>
+                    </div>
+                    <div class="tools">
+                        <span class="label">Tools:</span>
+                        <p>Use command-line tools like <span class="highlight">strings</span>, <span class="highlight">exiftool</span>, and <span class="highlight">binwalk</span>.</p>
+                    </div>
+                    <div class="resources">
+                        <span class="label">Resource:</span>
+                        <ul>
+                            <li>Start with beginner CTF challenges categorized as "Reverse Engineering" or "Forensics" on picoCTF</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Phase 3 -->
+        <div class="phase">
+            <div class="phase-header">
+                <h2 class="phase-title">Phase 3: Deep Dive & Specialization</h2>
+                <p class="phase-duration">4 Months: April 2026 – July 2026</p>
+                <div class="objective">
+                    <strong>Objective:</strong> Build intermediate skills in the core Hackerverse domains by practicing on dedicated platforms.
+                </div>
+            </div>
+
+            <!-- Months 7-8 -->
+            <div class="month">
+                <h3 class="month-title">Months 7-8: Offensive Security Deep Dive</h3>
+                
+                <div class="section">
+                    <div class="topics">
+                        <span class="label">Focus:</span>
+                        <p>Go beyond the basics in web and binary exploitation. Tackle more complex SQLi, learn about Server-Side Request Forgery (SSRF), and try your first simple buffer overflow.</p>
+                    </div>
+                    <div class="resources">
+                        <span class="label">Resources:</span>
+                        <ul>
+                            <li>Continue with PortSwigger Academy</li>
+                            <li>Move on to TryHackMe's "Offensive Pentesting" pathway</li>
+                            <li>Start the pwn.college modules for binary exploitation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Months 9-10 -->
+            <div class="month">
+                <h3 class="month-title">Months 9-10: Forensics & Reversing Deep Dive</h3>
+                
+                <div class="section">
+                    <div class="topics">
+                        <span class="label">Focus:</span>
+                        <ul>
+                            <li><strong>Forensics:</strong> Learn to use <span class="highlight">Volatility</span> for memory analysis and <span class="highlight">Autopsy</span> for disk forensics.</li>
+                            <li><strong>Reverse Engineering:</strong> Practice reading decompiled code in Ghidra to understand program logic and find hidden flags or vulnerabilities.</li>
+                        </ul>
+                    </div>
+                    <div class="resources">
+                        <span class="label">Resources:</span>
+                        <ul>
+                            <li>TryHackMe has excellent rooms dedicated to Volatility, Autopsy, and Ghidra</li>
+                            <li>This is the time to start trying the free, year-long Hackerverse CTF challenges</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Phase 4 -->
+        <div class="phase">
+            <div class="phase-header">
+                <h2 class="phase-title">Phase 4: Consolidation & Competition</h2>
+                <p class="phase-duration">2 Months & Beyond: August 2026 – Onwards</p>
+                <div class="objective">
+                    <strong>Objective:</strong> Put all your skills together, get comfortable with the pressure of time, and become an active competitor.
+                </div>
+            </div>
+
+            <!-- Month 11 -->
+            <div class="month">
+                <h3 class="month-title">Month 11: Full-Spectrum Practice</h3>
+                
+                <div class="section">
+                    <div class="activity">
+                        <span class="label">Activity:</span>
+                        <p>Focus entirely on solving CTF-style challenges. Use CTFtime.org to find active competitions. Join a team or participate solo.</p>
+                    </div>
+                    <div class="strategy">
+                        <span class="label">Strategy:</span>
+                        <p>When you get stuck, give it a serious try, but then look up a "write-up" (a solution explanation). Learning from others' solutions is one of the fastest ways to improve.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Month 12 & Onwards -->
+            <div class="month">
+                <h3 class="month-title">Month 12 & Onwards: Compete in Hackerverse</h3>
+                
+                <div class="section">
+                    <div class="activity">
+                        <span class="label">Activity:</span>
+                        <p>You are now ready. Actively participate in the monthly Hackerverse CTFs. Your goal is no longer just to learn, but to solve challenges efficiently.</p>
+                    </div>
+                    <div class="strategy">
+                        <span class="label">Analyze & Improve:</span>
+                        <p>After each competition, analyze your performance. Which category was your weakest? Spend the next month strengthening that area.</p>
+                    </div>
+                    <div class="community">
+                        <span class="label">Community:</span>
+                        <p>Join the EC-Council's official Discord server for Hackerverse. Engage with the community, ask questions, and share knowledge.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Success Note -->
+        <div class="success-note">
+            <p><strong>⚡ Key to Success:</strong></p>
+            <p>This roadmap provides a structured path, but the key to success is consistent, hands-on practice. Good luck!</p>
+        </div>
+    </div>
+
+    <script>
+        // Add smooth scroll behavior
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add intersection observer for fade-in animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.phase').forEach(phase => {
+            phase.style.opacity = '0';
+            phase.style.transform = 'translateY(20px)';
+            phase.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+            observer.observe(phase);
+        });
+
+        // Add progress indicator
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            
+            if (!document.querySelector('.progress-bar')) {
+                const progressBar = document.createElement('div');
+                progressBar.className = 'progress-bar';
+                progressBar.style.cssText = `
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    height: 4px;
+                    background: linear-gradient(90deg, #00ff88, #4ecdc4);
+                    z-index: 1000;
+                    transition: width 0.1s ease;
+                    box-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+                `;
+                document.body.appendChild(progressBar);
+            }
+            
+            document.querySelector('.progress-bar').style.width = scrolled + '%';
+        });
+    </script>
+</body>
+</html>
