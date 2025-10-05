@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hackerverse Competitor Roadmap</title>
+    <style>
+        /* --- Basic Setup & Typography --- */
+        body {
+            background-color: #121212;
+            color: #E0E0E0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #1e1e1e;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        /* --- Headings --- */
+        h1, h2, h3, h4 {
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            text-align: center;
+            color: #00ff99; /* Accent color */
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px rgba(0, 255, 153, 0.3);
+        }
+
+        h2 {
+            font-size: 1.8em;
+            border-bottom: 2px solid #00ff99;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+
+        h3 {
+            font-size: 1.4em;
+            color: #bb86fc; /* Secondary accent */
+            margin-top: 30px;
+        }
+        
+        h4 {
+            font-size: 1.2em;
+            color: #ffffff;
+            margin-top: 25px;
+            margin-bottom: 8px;
+        }
+
+        /* --- Content Styling --- */
+        p {
+            margin-bottom: 15px;
+        }
+
+        strong {
+            color: #03dac6;
+            font-weight: 600;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            position: relative;
+        }
+        
+        li::before {
+            content: '▸';
+            position: absolute;
+            left: -20px;
+            color: #00ff99;
+        }
+
+        /* --- Section and Block Styling --- */
+        .phase-objective {
+            background-color: rgba(187, 134, 252, 0.1);
+            border-left: 4px solid #bb86fc;
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 4px;
+            font-style: italic;
+        }
+
+        .month-block {
+            padding: 20px;
+            margin-top: 20px;
+            background-color: #2a2a2a;
+            border-radius: 8px;
+            border: 1px solid #333;
+        }
+        
+        .final-note {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: rgba(0, 255, 153, 0.1);
+            border-left: 4px solid #00ff99;
+            text-align: center;
+            font-size: 1.1em;
+            border-radius: 4px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>The Hackerverse Competitor Roadmap</h1>
+        <p style="text-align: center; color: #aaa;">Starting October 2025</p>
+
+        <section id="phase1">
+            <h2>Phase 1: Building the Foundation (3 Months)</h2>
+            <p class="phase-objective"><strong>Objective:</strong> Master the absolute fundamentals of IT that every cybersecurity professional needs. This phase is non-negotiable and crucial for success.</p>
+
+            <div class="month-block">
+                <h3>Month 1: Mastering the Command Line & Operating Systems</h3>
+                <h4>Linux/Unix Fundamentals:</h4>
+                <p><strong>Topics:</strong> Learn to navigate the filesystem (ls, cd, pwd), manage files/directories (cp, mv, rm, mkdir), manage permissions (chmod), filter text (grep, awk, sed), and manage processes (ps, kill). Learn about SSH and basic Bash scripting.</p>
+                <p><strong>Resources:</strong></p>
+                <ul>
+                    <li><strong>Practice:</strong> OverTheWire - Bandit (an excellent, game-like way to master the Linux command line).</li>
+                    <li><strong>Learning:</strong> TryHackMe's Linux Fundamentals module.</li>
+                </ul>
+
+                <h4>Windows Fundamentals:</h4>
+                <p><strong>Topics:</strong> Get comfortable with Command Prompt and PowerShell. Understand the basics of the Windows Registry, user account control, and the NTFS file system.</p>
+                <p><strong>Resources:</strong></p>
+                <ul>
+                    <li>Microsoft's official documentation and tutorials on PowerShell.</li>
+                </ul>
+            </div>
+
+            <div class="month-block">
+                <h3>Month 2: Understanding Networks</h3>
+                <p><strong>Topics:</strong> Learn the OSI and TCP/IP models. Understand what IP addresses, subnets, DNS, and MAC addresses are. Study common protocols like HTTP/HTTPS, FTP, SSH, and ICMP.</p>
+                <p><strong>Resources:</strong></p>
+                <ul>
+                    <li><strong>Theory:</strong> Professor Messer's CompTIA Network+ Training Course (free videos).</li>
+                    <li><strong>Practice:</strong> Use Wireshark to capture and analyze your own network traffic. Try the "Intro to Networking" room on TryHackMe.</li>
+                </ul>
+            </div>
+
+            <div class="month-block">
+                <h3>Month 3: Learning to Code for Hackers</h3>
+                <h4>Primary Language: Python</h4>
+                <p><strong>Topics:</strong> Focus on fundamentals: variables, data types, loops, conditional statements, functions, and file handling. Learn to use key libraries like requests (for web interaction) and pwntools (for binary exploitation).</p>
+                <p><strong>Resources:</strong></p>
+                <ul>
+                    <li><strong>Learning:</strong> freeCodeCamp's Python for Everybody course.</li>
+                    <li><strong>Practice:</strong> Codewars (solve small programming challenges).</li>
+                </ul>
+
+                <h4>Secondary Language: C/C++ Basics</h4>
+                <p><strong>Topics:</strong> You don't need to be an expert. Just understand basic syntax, pointers, and memory management, as this is crucial for reverse engineering and binary exploitation later.</p>
+                <p><strong>Resource:</strong></p>
+                <ul>
+                    <li>Any introductory C++ tutorial on YouTube will suffice.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="phase2">
+            <h2>Phase 2: Introduction to Cybersecurity & Tools (3 Months)</h2>
+            <p class="phase-objective"><strong>Objective:</strong> Transition from general IT to core cybersecurity concepts and begin using the essential tools of the trade.</p>
+
+            <div class="month-block">
+                <h3>Month 4: Web Exploitation Fundamentals</h3>
+                <p><strong>Topics:</strong> Learn how websites work (client-side vs. server-side). Dive deep into the OWASP Top 10 vulnerabilities, focusing initially on SQL Injection, Cross-Site Scripting (XSS), and Command Injection.</p>
+                <p><strong>Tools:</strong> Master the basics of Burp Suite Community Edition. Learn how to intercept, inspect, and modify web traffic.</p>
+                <p><strong>Resources:</strong></p>
+                <ul>
+                    <li><strong>Hands-on Academy:</strong> PortSwigger's Web Security Academy (The best free resource for learning web hacking).</li>
+                </ul>
+            </div>
+
+            <div class="month-block">
+                <h3>Month 5: Cryptography & Steganography</h3>
+                <h4>Cryptography:</h4>
+                <p><strong>Topics:</strong> Study classical ciphers (Caesar, Vigenère), modern hashing algorithms (MD5, SHA), and common encoding schemes (Base64, URL encoding). Understand the difference between symmetric and asymmetric encryption.</p>
+                <h4>Steganography:</h4>
+                <p><strong>Topics:</strong> Learn how data can be hidden within images, audio files, and other media.</p>
+                <p><strong>Tools:</strong> Get very familiar with CyberChef and command-line tools like openssl.</p>
+                <p><strong>Resources:</strong></p>
+                <ul>
+                    <li><strong>Practice:</strong> CryptoHack (an outstanding platform for learning cryptography through challenges).</li>
+                </ul>
+            </div>
+
+            <div class="month-block">
+                <h3>Month 6: Introduction to Reverse Engineering & Forensics</h3>
+                <h4>Reverse Engineering:</h4>
+                <p><strong>Topics:</strong> Learn the basics of x86 Assembly. Understand what a disassembler and a debugger do.</p>
+                <p><strong>Tool:</strong> Download Ghidra (free from the NSA) and learn its basic functions: how to load a binary and view the disassembly and decompiled C code.</p>
+                <h4>Digital Forensics:</h4>
+                <p><strong>Topics:</strong> Learn about file signatures (magic numbers), metadata, and how to analyze disk images and memory dumps.</p>
+                <p><strong>Tools:</strong> Use command-line tools like strings, exiftool, and binwalk.</p>
+                <p><strong>Resource:</strong></p>
+                <ul>
+                    <li>Start with beginner CTF challenges categorized as "Reverse Engineering" or "Forensics" on picoCTF.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="phase3">
+            <h2>Phase 3: Deep Dive & Specialization (4 Months)</h2>
+            <p class="phase-objective"><strong>Objective:</strong> Build intermediate skills in the core Hackerverse domains by practicing on dedicated platforms.</p>
+
+            <div class="month-block">
+                <h3>Months 7-8: Offensive Security Deep Dive</h3>
+                <p><strong>Focus:</strong> Go beyond the basics in web and binary exploitation. Tackle more complex SQLi, learn about Server-Side Request Forgery (SSRF), and try your first simple buffer overflow.</p>
+                <p><strong>Resources:</strong> Continue with PortSwigger Academy. Move on to TryHackMe's "Offensive Pentesting" pathway. Start the pwn.college modules for binary exploitation.</p>
+            </div>
+
+            <div class="month-block">
+                <h3>Months 9-10: Forensics & Reversing Deep Dive</h3>
+                <p><strong>Focus (Forensics):</strong> Learn to use Volatility for memory analysis and Autopsy for disk forensics.</p>
+                <p><strong>Focus (Reverse Engineering):</strong> Practice reading decompiled code in Ghidra to understand program logic and find hidden flags or vulnerabilities.</p>
+                <p><strong>Resources:</strong> TryHackMe has excellent rooms dedicated to Volatility, Autopsy, and Ghidra. This is the time to start trying the free, year-long Hackerverse CTF challenges.</p>
+            </div>
+        </section>
+        
+        <section id="phase4">
+            <h2>Phase 4: Consolidation & Competition (2 Months & Beyond)</h2>
+            <p class="phase-objective"><strong>Objective:</strong> Put all your skills together, get comfortable with the pressure of time, and become an active competitor.</p>
+
+            <div class="month-block">
+                <h3>Month 11: Full-Spectrum Practice</h3>
+                <p><strong>Activity:</strong> Focus entirely on solving CTF-style challenges. Use CTFtime.org to find active competitions. Join a team or participate solo.</p>
+                <p><strong>Strategy:</strong> When you get stuck, give it a serious try, but then look up a "write-up" (a solution explanation). Learning from others' solutions is one of the fastest ways to improve.</p>
+            </div>
+
+            <div class="month-block">
+                <h3>Month 12 & Onwards: Compete in Hackerverse</h3>
+                <p><strong>Activity:</strong> You are now ready. Actively participate in the monthly Hackerverse CTFs. Your goal is no longer just to learn, but to solve challenges efficiently.</p>
+                <p><strong>Analyze & Improve:</strong> After each competition, analyze your performance. Which category was your weakest? Spend the next month strengthening that area.</p>
+                <p><strong>Community:</strong> Join the EC-Council's official Discord server for Hackerverse. Engage with the community, ask questions, and share knowledge.</p>
+            </div>
+        </section>
+        
+        <div class="final-note">
+            This roadmap provides a structured path, but the key to success is consistent, hands-on practice. Good luck!
+        </div>
+
+    </div>
+
+</body>
+</html>
