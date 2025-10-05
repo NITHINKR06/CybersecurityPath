@@ -12,54 +12,59 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-            color: #fff;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: #e8e8e8;
             line-height: 1.6;
             padding: 20px;
+            min-height: 100vh;
         }
 
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 20px;
+            background: rgba(30, 41, 59, 0.95);
+            border-radius: 16px;
             padding: 40px;
             backdrop-filter: blur(10px);
-            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(148, 163, 184, 0.1);
         }
 
         header {
             text-align: center;
             margin-bottom: 50px;
             padding-bottom: 30px;
-            border-bottom: 3px solid #00ff88;
+            border-bottom: 2px solid #3b82f6;
         }
 
         h1 {
             font-size: 2.5em;
-            color: #00ff88;
+            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
             margin-bottom: 10px;
-            text-shadow: 0 0 20px rgba(0, 255, 136, 0.5);
+            font-weight: 700;
         }
 
         .subtitle {
             font-size: 1.2em;
-            color: #a0a0a0;
+            color: #94a3b8;
         }
 
         .phase {
             margin-bottom: 50px;
-            background: rgba(255, 255, 255, 0.03);
-            border-left: 5px solid #00ff88;
-            border-radius: 10px;
+            background: rgba(51, 65, 85, 0.3);
+            border-left: 4px solid #3b82f6;
+            border-radius: 12px;
             padding: 30px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .phase:hover {
-            transform: translateX(10px);
-            box-shadow: -5px 5px 30px rgba(0, 255, 136, 0.2);
+            transform: translateX(5px);
+            box-shadow: 0 10px 40px rgba(59, 130, 246, 0.1);
         }
 
         .phase-header {
@@ -68,42 +73,45 @@
 
         .phase-title {
             font-size: 2em;
-            color: #00ff88;
+            color: #60a5fa;
             margin-bottom: 10px;
+            font-weight: 600;
         }
 
         .phase-duration {
-            color: #ff6b6b;
-            font-weight: bold;
+            color: #fbbf24;
+            font-weight: 600;
             font-size: 1.1em;
             margin-bottom: 10px;
         }
 
         .objective {
-            background: rgba(0, 255, 136, 0.1);
+            background: rgba(59, 130, 246, 0.1);
             padding: 15px;
             border-radius: 8px;
-            border-left: 3px solid #00ff88;
+            border-left: 3px solid #60a5fa;
             margin-bottom: 20px;
         }
 
         .objective strong {
-            color: #00ff88;
+            color: #93c5fd;
         }
 
         .month {
             margin-bottom: 30px;
-            background: rgba(255, 255, 255, 0.02);
+            background: rgba(30, 58, 138, 0.1);
             padding: 20px;
             border-radius: 8px;
+            border: 1px solid rgba(59, 130, 246, 0.2);
         }
 
         .month-title {
             font-size: 1.5em;
-            color: #4ecdc4;
+            color: #a78bfa;
             margin-bottom: 15px;
             display: flex;
             align-items: center;
+            font-weight: 600;
         }
 
         .month-title::before {
@@ -119,9 +127,9 @@
 
         .section-title {
             font-size: 1.2em;
-            color: #ffd93d;
+            color: #fbbf24;
             margin-bottom: 10px;
-            font-weight: bold;
+            font-weight: 600;
         }
 
         .topics, .tools, .resources, .activity, .strategy, .community {
@@ -129,8 +137,8 @@
         }
 
         .label {
-            color: #ff6b6b;
-            font-weight: bold;
+            color: #f472b6;
+            font-weight: 600;
             display: inline-block;
             margin-right: 5px;
         }
@@ -147,45 +155,108 @@
         }
 
         li::before {
-            content: "▹";
-            color: #00ff88;
+            content: "▸";
+            color: #60a5fa;
             position: absolute;
             left: 0;
             font-size: 1.2em;
         }
 
-        .resource-link {
-            color: #4ecdc4;
+        a {
+            color: #60a5fa;
             text-decoration: none;
-            transition: color 0.3s ease;
+            border-bottom: 1px dotted #60a5fa;
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            color: #93c5fd;
+            border-bottom-style: solid;
+        }
+
+        .resource-link {
+            color: #34d399;
+            text-decoration: none;
+            border-bottom: 1px dotted #34d399;
+            transition: all 0.3s ease;
+            font-weight: 500;
         }
 
         .resource-link:hover {
-            color: #00ff88;
-            text-decoration: underline;
+            color: #6ee7b7;
+            border-bottom-style: solid;
         }
 
         .highlight {
-            background: rgba(255, 107, 107, 0.2);
+            background: rgba(251, 191, 36, 0.2);
             padding: 2px 6px;
             border-radius: 4px;
-            color: #ff6b6b;
-            font-weight: bold;
+            color: #fde047;
+            font-weight: 600;
+        }
+
+        .tool-highlight {
+            background: rgba(139, 92, 246, 0.2);
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: #c4b5fd;
+            font-weight: 600;
         }
 
         .success-note {
-            background: rgba(255, 215, 0, 0.1);
-            border: 2px solid #ffd700;
-            border-radius: 10px;
-            padding: 20px;
+            background: linear-gradient(135deg, rgba(34, 197, 94, 0.1), rgba(59, 130, 246, 0.1));
+            border: 2px solid #60a5fa;
+            border-radius: 12px;
+            padding: 25px;
             margin-top: 40px;
             text-align: center;
             font-size: 1.1em;
         }
 
         .success-note strong {
-            color: #ffd700;
+            color: #fbbf24;
             font-size: 1.2em;
+        }
+
+        .quick-links {
+            background: rgba(51, 65, 85, 0.3);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .quick-links h3 {
+            color: #60a5fa;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        .link-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+
+        .link-item {
+            background: rgba(59, 130, 246, 0.1);
+            padding: 10px;
+            border-radius: 6px;
+            transition: background 0.3s ease;
+        }
+
+        .link-item:hover {
+            background: rgba(59, 130, 246, 0.2);
+        }
+
+        .progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+            z-index: 1000;
+            transition: width 0.1s ease;
+            box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
         }
 
         @media (max-width: 768px) {
@@ -206,7 +277,6 @@
             }
         }
 
-        /* Animation */
         @keyframes fadeIn {
             from {
                 opacity: 0;
@@ -227,8 +297,39 @@
     <div class="container">
         <header>
             <h1>🚀 The Hackerverse Competitor Roadmap</h1>
-            <p class="subtitle">Starting October 2025</p>
+            <p class="subtitle">Starting October 2025 - Your Path to Cybersecurity Excellence</p>
         </header>
+
+        <!-- Quick Links Section -->
+        <div class="quick-links">
+            <h3>🔗 Essential Resources Hub</h3>
+            <div class="link-grid">
+                <div class="link-item">
+                    <a href="https://overthewire.org/wargames/bandit/" target="_blank" class="resource-link">OverTheWire Bandit</a>
+                </div>
+                <div class="link-item">
+                    <a href="https://tryhackme.com/" target="_blank" class="resource-link">TryHackMe</a>
+                </div>
+                <div class="link-item">
+                    <a href="https://portswigger.net/web-security" target="_blank" class="resource-link">PortSwigger Academy</a>
+                </div>
+                <div class="link-item">
+                    <a href="https://cryptohack.org/" target="_blank" class="resource-link">CryptoHack</a>
+                </div>
+                <div class="link-item">
+                    <a href="https://picoctf.org/" target="_blank" class="resource-link">picoCTF</a>
+                </div>
+                <div class="link-item">
+                    <a href="https://pwn.college/" target="_blank" class="resource-link">pwn.college</a>
+                </div>
+                <div class="link-item">
+                    <a href="https://ctftime.org/" target="_blank" class="resource-link">CTFtime</a>
+                </div>
+                <div class="link-item">
+                    <a href="https://gchq.github.io/CyberChef/" target="_blank" class="resource-link">CyberChef</a>
+                </div>
+            </div>
+        </div>
 
         <!-- Phase 1 -->
         <div class="phase">
@@ -253,8 +354,9 @@
                     <div class="resources">
                         <span class="label">Resources:</span>
                         <ul>
-                            <li><strong>Practice:</strong> OverTheWire - Bandit (This is an excellent, game-like way to master the Linux command line)</li>
-                            <li><strong>Learning:</strong> TryHackMe's Linux Fundamentals module</li>
+                            <li><strong>Practice:</strong> <a href="https://overthewire.org/wargames/bandit/" target="_blank" class="resource-link">OverTheWire - Bandit</a> (Excellent game-like way to master Linux command line)</li>
+                            <li><strong>Learning:</strong> <a href="https://tryhackme.com/module/linux-fundamentals" target="_blank" class="resource-link">TryHackMe's Linux Fundamentals</a> module</li>
+                            <li><strong>Reference:</strong> <a href="https://linuxcommand.org/" target="_blank" class="resource-link">LinuxCommand.org</a></li>
                         </ul>
                     </div>
                 </div>
@@ -268,7 +370,8 @@
                     <div class="resources">
                         <span class="label">Resources:</span>
                         <ul>
-                            <li>Microsoft's official documentation and tutorials on PowerShell</li>
+                            <li><a href="https://docs.microsoft.com/en-us/powershell/scripting/learn/ps101/00-introduction" target="_blank" class="resource-link">Microsoft PowerShell Documentation</a></li>
+                            <li><a href="https://tryhackme.com/room/windowsfundamentals1xbx" target="_blank" class="resource-link">TryHackMe Windows Fundamentals</a></li>
                         </ul>
                     </div>
                 </div>
@@ -286,8 +389,10 @@
                     <div class="resources">
                         <span class="label">Resources:</span>
                         <ul>
-                            <li><strong>Theory:</strong> Professor Messer's CompTIA Network+ Training Course (free videos)</li>
-                            <li><strong>Practice:</strong> Use Wireshark to capture and analyze your own network traffic. Try the "Intro to Networking" room on TryHackMe</li>
+                            <li><strong>Theory:</strong> <a href="https://www.professormesser.com/network-plus/n10-008/n10-008-video/n10-008-training-course/" target="_blank" class="resource-link">Professor Messer's CompTIA Network+ Course</a> (free videos)</li>
+                            <li><strong>Practice:</strong> <a href="https://www.wireshark.org/" target="_blank" class="resource-link">Wireshark</a> - Capture and analyze network traffic</li>
+                            <li><strong>Interactive:</strong> <a href="https://tryhackme.com/room/introtonetworking" target="_blank" class="resource-link">TryHackMe Intro to Networking</a></li>
+                            <li><strong>Visualization:</strong> <a href="https://www.submarinecablemap.com/" target="_blank" class="resource-link">Submarine Cable Map</a> (understand global internet infrastructure)</li>
                         </ul>
                     </div>
                 </div>
@@ -301,13 +406,15 @@
                     <div class="section-title">🐍 Primary Language: Python</div>
                     <div class="topics">
                         <span class="label">Topics:</span>
-                        <p>Focus on fundamentals: variables, data types, loops, conditional statements, functions, and file handling. Learn to use key libraries like <span class="highlight">requests</span> (for web interaction) and <span class="highlight">pwntools</span> (for binary exploitation).</p>
+                        <p>Focus on fundamentals: variables, data types, loops, conditional statements, functions, and file handling. Learn to use key libraries like <span class="tool-highlight">requests</span> (for web interaction) and <span class="tool-highlight">pwntools</span> (for binary exploitation).</p>
                     </div>
                     <div class="resources">
                         <span class="label">Resources:</span>
                         <ul>
-                            <li><strong>Learning:</strong> freeCodeCamp's Python for Everybody course</li>
-                            <li><strong>Practice:</strong> Codewars (solve small programming challenges)</li>
+                            <li><strong>Learning:</strong> <a href="https://www.freecodecamp.org/learn/scientific-computing-with-python/" target="_blank" class="resource-link">freeCodeCamp Python Course</a></li>
+                            <li><strong>Practice:</strong> <a href="https://www.codewars.com/" target="_blank" class="resource-link">Codewars</a> (solve programming challenges)</li>
+                            <li><strong>Security Focus:</strong> <a href="https://www.hackingedu.co/python-for-hackers" target="_blank" class="resource-link">Python for Hackers</a></li>
+                            <li><strong>Libraries:</strong> <a href="https://github.com/Gallopsled/pwntools" target="_blank" class="resource-link">pwntools GitHub</a></li>
                         </ul>
                     </div>
                 </div>
@@ -319,9 +426,10 @@
                         <p>You don't need to be an expert. Just understand basic syntax, pointers, and memory management, as this is crucial for reverse engineering and binary exploitation later.</p>
                     </div>
                     <div class="resources">
-                        <span class="label">Resource:</span>
+                        <span class="label">Resources:</span>
                         <ul>
-                            <li>Any introductory C++ tutorial on YouTube will suffice</li>
+                            <li><a href="https://www.learn-c.org/" target="_blank" class="resource-link">Learn-C.org Interactive Tutorial</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=KJgsSFOSQv0" target="_blank" class="resource-link">C Programming Full Course (YouTube)</a></li>
                         </ul>
                     </div>
                 </div>
@@ -349,12 +457,14 @@
                     </div>
                     <div class="tools">
                         <span class="label">Tools:</span>
-                        <p>Master the basics of <span class="highlight">Burp Suite Community Edition</span>. Learn how to intercept, inspect, and modify web traffic.</p>
+                        <p>Master the basics of <a href="https://portswigger.net/burp/communitydownload" target="_blank" class="resource-link">Burp Suite Community Edition</a>. Learn how to intercept, inspect, and modify web traffic.</p>
                     </div>
                     <div class="resources">
                         <span class="label">Resources:</span>
                         <ul>
-                            <li><strong>Hands-on Academy:</strong> PortSwigger's Web Security Academy (The best free resource for learning web hacking)</li>
+                            <li><strong>Hands-on Academy:</strong> <a href="https://portswigger.net/web-security" target="_blank" class="resource-link">PortSwigger's Web Security Academy</a> (Best free resource for web hacking)</li>
+                            <li><strong>OWASP:</strong> <a href="https://owasp.org/www-project-top-ten/" target="_blank" class="resource-link">OWASP Top 10</a></li>
+                            <li><strong>Practice:</strong> <a href="https://www.hackthebox.com/" target="_blank" class="resource-link">HackTheBox</a> (Web challenges)</li>
                         </ul>
                     </div>
                 </div>
@@ -374,12 +484,14 @@
                     </div>
                     <div class="tools">
                         <span class="label">Tools:</span>
-                        <p>Get very familiar with <span class="highlight">CyberChef</span> and command-line tools like <span class="highlight">openssl</span>.</p>
+                        <p>Get familiar with <a href="https://gchq.github.io/CyberChef/" target="_blank" class="resource-link">CyberChef</a>, <span class="tool-highlight">openssl</span>, and <a href="https://github.com/Paradoxis/StegCracker" target="_blank" class="resource-link">StegCracker</a>.</p>
                     </div>
                     <div class="resources">
                         <span class="label">Resources:</span>
                         <ul>
-                            <li><strong>Practice:</strong> CryptoHack (an outstanding platform for learning cryptography through challenges)</li>
+                            <li><strong>Practice:</strong> <a href="https://cryptohack.org/" target="_blank" class="resource-link">CryptoHack</a> (Outstanding platform for learning cryptography)</li>
+                            <li><strong>Theory:</strong> <a href="https://cryptopals.com/" target="_blank" class="resource-link">Cryptopals Challenges</a></li>
+                            <li><strong>Tools:</strong> <a href="https://www.dcode.fr/en" target="_blank" class="resource-link">dCode</a> (Cipher identifier and solver)</li>
                         </ul>
                     </div>
                 </div>
@@ -396,8 +508,8 @@
                         <p>Learn the basics of x86 Assembly. Understand what a disassembler and a debugger do.</p>
                     </div>
                     <div class="tools">
-                        <span class="label">Tool:</span>
-                        <p>Download <span class="highlight">Ghidra</span> (free from the NSA) and learn its basic functions: how to load a binary and view the disassembly and decompiled C code.</p>
+                        <span class="label">Tools:</span>
+                        <p>Download <a href="https://ghidra-sre.org/" target="_blank" class="resource-link">Ghidra</a> (free from NSA) and learn its basic functions. Also explore <a href="https://www.hex-rays.com/ida-free/" target="_blank" class="resource-link">IDA Free</a>.</p>
                     </div>
                 </div>
 
@@ -409,12 +521,13 @@
                     </div>
                     <div class="tools">
                         <span class="label">Tools:</span>
-                        <p>Use command-line tools like <span class="highlight">strings</span>, <span class="highlight">exiftool</span>, and <span class="highlight">binwalk</span>.</p>
+                        <p>Use tools like <span class="tool-highlight">strings</span>, <a href="https://exiftool.org/" target="_blank" class="resource-link">ExifTool</a>, <a href="https://github.com/ReFirmLabs/binwalk" target="_blank" class="resource-link">Binwalk</a>, and <a href="https://www.sleuthkit.org/autopsy/" target="_blank" class="resource-link">Autopsy</a>.</p>
                     </div>
                     <div class="resources">
-                        <span class="label">Resource:</span>
+                        <span class="label">Resources:</span>
                         <ul>
-                            <li>Start with beginner CTF challenges categorized as "Reverse Engineering" or "Forensics" on picoCTF</li>
+                            <li><a href="https://picoctf.org/" target="_blank" class="resource-link">picoCTF</a> - Beginner RE and Forensics challenges</li>
+                            <li><a href="https://crackmes.one/" target="_blank" class="resource-link">Crackmes.one</a> - Reverse engineering practice</li>
                         </ul>
                     </div>
                 </div>
@@ -443,9 +556,10 @@
                     <div class="resources">
                         <span class="label">Resources:</span>
                         <ul>
-                            <li>Continue with PortSwigger Academy</li>
-                            <li>Move on to TryHackMe's "Offensive Pentesting" pathway</li>
-                            <li>Start the pwn.college modules for binary exploitation</li>
+                            <li>Continue with <a href="https://portswigger.net/web-security" target="_blank" class="resource-link">PortSwigger Academy</a></li>
+                            <li><a href="https://tryhackme.com/paths" target="_blank" class="resource-link">TryHackMe's Offensive Pentesting Path</a></li>
+                            <li><a href="https://pwn.college/" target="_blank" class="resource-link">pwn.college</a> modules for binary exploitation</li>
+                            <li><a href="https://exploit.education/" target="_blank" class="resource-link">Exploit Education</a> for vulnerable VMs</li>
                         </ul>
                     </div>
                 </div>
@@ -459,15 +573,16 @@
                     <div class="topics">
                         <span class="label">Focus:</span>
                         <ul>
-                            <li><strong>Forensics:</strong> Learn to use <span class="highlight">Volatility</span> for memory analysis and <span class="highlight">Autopsy</span> for disk forensics.</li>
+                            <li><strong>Forensics:</strong> Learn to use <a href="https://www.volatilityfoundation.org/" target="_blank" class="resource-link">Volatility</a> for memory analysis and <a href="https://www.sleuthkit.org/autopsy/" target="_blank" class="resource-link">Autopsy</a> for disk forensics.</li>
                             <li><strong>Reverse Engineering:</strong> Practice reading decompiled code in Ghidra to understand program logic and find hidden flags or vulnerabilities.</li>
                         </ul>
                     </div>
                     <div class="resources">
                         <span class="label">Resources:</span>
                         <ul>
-                            <li>TryHackMe has excellent rooms dedicated to Volatility, Autopsy, and Ghidra</li>
-                            <li>This is the time to start trying the free, year-long Hackerverse CTF challenges</li>
+                            <li>TryHackMe rooms: <a href="https://tryhackme.com/room/volatility" target="_blank" class="resource-link">Volatility</a>, <a href="https://tryhackme.com/room/autopsy2ze0" target="_blank" class="resource-link">Autopsy</a>, <a href="https://tryhackme.com/room/ghidra101" target="_blank" class="resource-link">Ghidra</a></li>
+                            <li><a href="https://www.hackerverse.com/" target="_blank" class="resource-link">Hackerverse CTF</a> - Start with free challenges</li>
+                            <li><a href="https://dfir.training/" target="_blank" class="resource-link">DFIR Training</a> - Free forensics resources</li>
                         </ul>
                     </div>
                 </div>
@@ -491,11 +606,19 @@
                 <div class="section">
                     <div class="activity">
                         <span class="label">Activity:</span>
-                        <p>Focus entirely on solving CTF-style challenges. Use CTFtime.org to find active competitions. Join a team or participate solo.</p>
+                        <p>Focus entirely on solving CTF-style challenges. Use <a href="https://ctftime.org/" target="_blank" class="resource-link">CTFtime.org</a> to find active competitions. Join a team or participate solo.</p>
                     </div>
                     <div class="strategy">
                         <span class="label">Strategy:</span>
-                        <p>When you get stuck, give it a serious try, but then look up a "write-up" (a solution explanation). Learning from others' solutions is one of the fastest ways to improve.</p>
+                        <p>When stuck, try for 30-45 minutes, then look up writeups on <a href="https://github.com/ctfs" target="_blank" class="resource-link">CTF Writeups</a>. Learning from solutions is crucial for improvement.</p>
+                    </div>
+                    <div class="resources">
+                        <span class="label">Additional Platforms:</span>
+                        <ul>
+                            <li><a href="https://ctflearn.com/" target="_blank" class="resource-link">CTFlearn</a> - Beginner-friendly challenges</li>
+                            <li><a href="https://ringzer0ctf.com/" target="_blank" class="resource-link">RingZer0 CTF</a> - Various challenge categories</li>
+                            <li><a href="https://www.root-me.org/" target="_blank" class="resource-link">Root-Me</a> - Progressive challenges</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -507,7 +630,7 @@
                 <div class="section">
                     <div class="activity">
                         <span class="label">Activity:</span>
-                        <p>You are now ready. Actively participate in the monthly Hackerverse CTFs. Your goal is no longer just to learn, but to solve challenges efficiently.</p>
+                        <p>You are now ready. Actively participate in the monthly <a href="https://www.hackerverse.com/" target="_blank" class="resource-link">Hackerverse CTFs</a>. Your goal is no longer just to learn, but to solve challenges efficiently.</p>
                     </div>
                     <div class="strategy">
                         <span class="label">Analyze & Improve:</span>
@@ -515,7 +638,15 @@
                     </div>
                     <div class="community">
                         <span class="label">Community:</span>
-                        <p>Join the EC-Council's official Discord server for Hackerverse. Engage with the community, ask questions, and share knowledge.</p>
+                        <p>Join the <a href="https://discord.gg/eccouncil" target="_blank" class="resource-link">EC-Council Discord</a> for Hackerverse. Engage with the community, ask questions, and share knowledge. Follow <a href="https://twitter.com/ECCOUNCIL" target="_blank" class="resource-link">@ECCOUNCIL on Twitter</a> for updates.</p>
+                    </div>
+                    <div class="resources">
+                        <span class="label">Stay Updated:</span>
+                        <ul>
+                            <li><a href="https://www.reddit.com/r/securityCTF/" target="_blank" class="resource-link">r/securityCTF</a> - Reddit community</li>
+                            <li><a href="https://www.youtube.com/c/LiveOverflow" target="_blank" class="resource-link">LiveOverflow YouTube</a> - CTF walkthroughs</li>
+                            <li><a href="https://www.youtube.com/c/JohnHammond010" target="_blank" class="resource-link">John Hammond</a> - CTF content</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -524,22 +655,43 @@
         <!-- Success Note -->
         <div class="success-note">
             <p><strong>⚡ Key to Success:</strong></p>
-            <p>This roadmap provides a structured path, but the key to success is consistent, hands-on practice. Good luck!</p>
+            <p>Consistency beats intensity. Practice daily, even if just for 30 minutes. Join the community, ask questions, and never stop learning. Remember: every expert was once a beginner!</p>
+            <p style="margin-top: 15px;">
+                <a href="https://www.hackerverse.com/register" target="_blank" class="resource-link" style="font-size: 1.1em;">🎯 Register for Hackerverse Now!</a>
+            </p>
         </div>
     </div>
 
     <script>
-        // Add smooth scroll behavior
+        // Progress bar
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            
+            if (!document.querySelector('.progress-bar')) {
+                const progressBar = document.createElement('div');
+                progressBar.className = 'progress-bar';
+                document.body.appendChild(progressBar);
+            }
+            
+            document.querySelector('.progress-bar').style.width = scrolled + '%';
+        });
+
+        // Smooth scroll for internal links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
             });
         });
 
-        // Add intersection observer for fade-in animation
+        // Intersection observer for animations
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -100px 0px'
@@ -561,29 +713,11 @@
             observer.observe(phase);
         });
 
-        // Add progress indicator
-        window.addEventListener('scroll', () => {
-            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            const scrolled = (winScroll / height) * 100;
-            
-            if (!document.querySelector('.progress-bar')) {
-                const progressBar = document.createElement('div');
-                progressBar.className = 'progress-bar';
-                progressBar.style.cssText = `
-                    position: fixed;
-                    top: 0;
-                    left: 0;
-                    height: 4px;
-                    background: linear-gradient(90deg, #00ff88, #4ecdc4);
-                    z-index: 1000;
-                    transition: width 0.1s ease;
-                    box-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
-                `;
-                document.body.appendChild(progressBar);
-            }
-            
-            document.querySelector('.progress-bar').style.width = scrolled + '%';
+        // Add link tracking (optional - for analytics)
+        document.querySelectorAll('a[target="_blank"]').forEach(link => {
+            link.addEventListener('click', function() {
+                console.log('External link clicked:', this.href);
+            });
         });
     </script>
 </body>
